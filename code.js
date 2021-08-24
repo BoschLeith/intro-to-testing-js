@@ -13,6 +13,8 @@ function sayHello(input) {
 }
 
 // isFive function
-function isFive() {
-
+function isFive(input) {
+    return input === input
 }
+
+console.log(isFive());
