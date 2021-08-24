@@ -13,9 +13,11 @@ function sayHello(input) {
 }
 
 // isFive function
-function isFive(input) {
-    return input == 5;
+function isFive(number) {
+    return number == 5;
 }
 
-
-console.log(isFive('dog'));
+// isEven function
+function isEven(number){
+    return number % 2 === 0;
+}

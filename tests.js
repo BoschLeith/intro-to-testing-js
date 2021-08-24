@@ -78,3 +78,34 @@ describe('isFive', function () {
         expect(isFive('5')).toBe(true);
     })
 });
+
+// Unit tests for isEven function
+describe('isEven', function (){
+   it('should be a defined function', function (){
+       expect(typeof isEven).toBe('function');
+   });
+   it('should return a boolean no matter input', function (){
+      expect(isEven()).toBe(false);
+   });
+   it('should return true when called with 2', function (){
+       expect(isEven(2)).toBe(true);
+   });
+    it('should return true when called with -4', function (){
+        expect(isEven(-4)).toBe(true);
+    });
+    it('should return false when called with 3', function (){
+        expect(isEven(3)).toBe(false);
+    });
+    it('should return false when called with "banana"', function (){
+        expect(isEven('banana')).toBe(false);
+    });
+    it('should return true when called with "8"', function (){
+        expect(isEven('8')).toBe(true);
+    });
+    it('should be false when called with Infinity', function (){
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it('should be false when called with a boolean like true or false', function (){
+        expect(isEven(true)).toBe(false);
+    });
+});
