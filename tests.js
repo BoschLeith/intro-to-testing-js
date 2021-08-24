@@ -31,4 +31,34 @@ describe('sayHello', function () {
     it('should return the string "Hello, Pat!" when sayHello("Pat")', function () {
         expect(sayHello('Pat')).toBe('Hello, Pat!');
     });
+    it('should return the string "Hello, World!" when sayHello("World")', function () {
+        expect(sayHello()).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when sayHello(true)', function () {
+        expect(sayHello(true)).toBe('Hello, World!');
+    })
+    it('should return the string "Hello, World!" when sayHello(false)', function () {
+        expect(sayHello(false)).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when sayHello(null)', function () {
+        expect(sayHello(null)).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when sayHello("")', function (){
+        expect(sayHello('')).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when sayHello(number)', function (){
+       expect(sayHello()).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when sayHello("number")', function (){
+        expect(sayHello()).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when sayHello(function)', function (){
+       expect(sayHello()).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when sayHello(array)', function (){
+        expect(sayHello()).toBe('Hello, World!');
+    });
+    it('should return the string "Hello, World!" when sayHello(object)', function (){
+        expect(sayHello()).toBe('Hello, World!');
+    });
 });

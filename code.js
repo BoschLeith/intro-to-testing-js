@@ -5,5 +5,9 @@ function helloWorld() {
 
 // sayHello function
 function sayHello(input) {
-  return 'Hello, ' + input + '!';
+  if (input === undefined || input === true || input === false || input === null || input === "" || !isNaN(input) || typeof input === ('function' || 'object')) {
+      return 'Hello, World!';
+  } else {
+      return 'Hello, ' + input + '!';
+  }
 }
