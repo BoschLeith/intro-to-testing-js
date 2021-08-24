@@ -21,3 +21,8 @@ function isFive(number) {
 function isEven(number){
     return number % 2 === 0;
 }
+
+// isVowel function
+function isVowel(x) {
+    return ("aeiouAEIOU".indexOf(x) !== -1);
+}
