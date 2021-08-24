@@ -69,6 +69,12 @@ describe('isFive', function () {
         expect(typeof isFive).toBe('function');
     });
     it('should return a boolean no matter input', function (){
-        expect(isFive()).toBe(true);
+        expect(isFive()).toBe(false);
     });
+    it('should return true with input 5', function (){
+       expect(isFive(5)).toBe(true);
+    });
+    it('should return true with input "5"', function (){
+        expect(isFive('5')).toBe(true);
+    })
 });

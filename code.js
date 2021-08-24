@@ -14,7 +14,8 @@ function sayHello(input) {
 
 // isFive function
 function isFive(input) {
-    return input === input
+    return input == 5;
 }
 
-console.log(isFive());
+
+console.log(isFive('dog'));
